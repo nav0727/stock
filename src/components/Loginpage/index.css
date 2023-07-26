@@ -1,0 +1,8 @@
+.search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:800px;
+    align-items: center;
+    list-style-type: none;
+}

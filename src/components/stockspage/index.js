@@ -1,21 +1,20 @@
-
-const CountriesMap = props => {
-  const {map, remove} = props
-  const {id, name, imageUrl} = map
+import './index.css'
+const SelectedStocks = props => {
+  const {stock, remove} = props
+  const {id, name} = stock
   const removeCountry = () => {
     remove(id)
   }
   return (
-    <div id={id}>
-      <img src={imageUrl} alt="thumbnail" />
-      <div>
+    <div id={id} className="select-container">
+      
         <p>{name}</p>
-        <button onClick={removeCountry}>
+        <button onClick={removeCountry} className='btn btn-danger'>
           Remove
         </button>
       </div>
-    </div>
+  
   )
 }
 
-export default CountriesMap
+export default SelectedStocks

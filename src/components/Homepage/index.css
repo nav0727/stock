@@ -11,13 +11,23 @@
     display:none;
 }
 
-.input{
+.search-bar{
     margin-top:40vh;
+    margin-bottom: 10px;
     width:800px;
-    padding: 15px;
+    padding:15px;
     border-radius: 10px;
+    border:1px thin;
 }
+
 .name{
     justify-content: space-between;
-    width:700px;
+}
+
+.select-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100vw;
+    align-items: flex-start;
 }

@@ -1,24 +1,26 @@
+import './index.css';
 
-const CountryItem = props => {
-  const {countryItem, onVisit} = props
-  const {id, name, isVisited} = countryItem
+
+const StockItem = props => {
+  const {stocksItem, onVisit} = props // 
+  const {id, name, isAdd} = stocksItem
   const changeVisit = () => {
     onVisit(id)
   }
 
   return (
-    <div id={id}>
+    <div id={id} className="search">
       <p>{name}</p>
 
-      {isVisited ? (
-        <p>Visited</p>
+      {isAdd ? (
+        <p>added</p>
       ) : (
-        <button onClick={changeVisit}>
-          Visit
+        <button onClick={changeVisit} className="btn btn-success">
+          Add
         </button>
       )}
     </div>
   )
 }
 
-export default CountryItem
+export default StockItem
